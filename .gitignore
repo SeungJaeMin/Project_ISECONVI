@@ -13,3 +13,4 @@ ISECONVI.code-workspace
 *.suo
 *.xcodeproj
 *.xcworkspace
+*.uproject
