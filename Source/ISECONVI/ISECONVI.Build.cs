@@ -15,13 +15,13 @@ public class ISECONVI : ModuleRules
 			"Engine", 
 			"InputCore", 
 			"HeadMountedDisplay",
+			"SpinePlugin",
 			"EnhancedInput"
 			}
 		);
 		PublicIncludePaths.AddRange(
 			new string[] {
 				"ISECONVI"
-
 			}
 		);
 
