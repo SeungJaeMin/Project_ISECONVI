@@ -15,7 +15,6 @@ class ISECONVI_API ABattleGridManager : public AActor
 public:	
     ABattleGridManager();
 
-
     UFUNCTION(BlueprintCallable)
     void SpawnTileActors(int32 Height, int32 Width, float TileSize, float TileSpacing);
 

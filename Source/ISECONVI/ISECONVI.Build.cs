@@ -30,7 +30,7 @@ public class ISECONVI : ModuleRules
 		PublicIncludePaths.AddRange(
 			new string[] {
 				"ISECONVI",
-				"ISECONVI/BattleSequence"
+				"ISECONVI/ISECONVI_BattleSequence"
 
 			}
 		);

@@ -3,6 +3,8 @@
 ABattleGridManager::ABattleGridManager(){
     // Set this actor to call Tick() every frame
     PrimaryActorTick.bCanEverTick = false;
+
+    SpawnedTiles.Empty();
 }
 
 // Called when the game starts or when spawned
