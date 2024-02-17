@@ -10,18 +10,28 @@ public class ISECONVI : ModuleRules
 	
 		PublicDependencyModuleNames.AddRange(
 			new string[] {
+			// Gameplay Abilites 
+            "GameplayAbilities", 
+			"GameplayTags", 
+			"GameplayTasks",
+
+			// Spine Plugin
+			"SpinePlugin",
+			
+			// Default Setting 
 			"Core", 
 			"CoreUObject", 
 			"Engine", 
-			"InputCore", 
+			"InputCore",
 			"HeadMountedDisplay",
-			"SpinePlugin",
 			"EnhancedInput"
 			}
 		);
 		PublicIncludePaths.AddRange(
 			new string[] {
-				"ISECONVI"
+				"ISECONVI",
+				"ISECONVI/BattleSequence"
+
 			}
 		);
 

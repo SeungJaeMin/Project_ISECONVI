@@ -12,9 +12,16 @@ class ISECONVI_API ABattleTile : public AActor
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
-	ABattleTile();
+    // Sets default values for this actor's properties
+    ABattleTile();
 
+    // Tile count value
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Tile")
+    FVector2D TileIndex;
+
+    // Set the tile count value
+    void SetTileCount(FVector2D Count);
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
