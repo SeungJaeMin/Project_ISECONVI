@@ -4,7 +4,7 @@ ABattleGridManager::ABattleGridManager(){
     // Set this actor to call Tick() every frame
     PrimaryActorTick.bCanEverTick = false;
 
-    SpawnedTiles.Empty();
+    BattleTileClass = ABattleTile::StaticClass();
 }
 
 // Called when the game starts or when spawned
@@ -17,41 +17,34 @@ void ABattleGridManager::BeginPlay()
 void ABattleGridManager::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
+    BattleGrid.Empty();
 }
 
-void ABattleGridManager::SpawnTileActors(int32 Height, int32 Width, float TileSize, float TileSpacing)
-{
-    // Spawn tile actors in a 2D array
-    for (int32 Y = 0; Y < Height; ++Y)
-    {
-        for (int32 X = 0; X < Width; ++X)
-        {
-            // Calculate tile index
-            FVector2D TileIndex(X, Y);
+void ABattleGridManager::SpawnBattleTileActor(FVector2D GridSize){
+    if(BattleTileClass){
+        // 상대트랜스폼을 위한 셀프 로케이션 로컬변수
+        FVector GridRelativeLocation = GetActorLocation();
+        // 가로 loop
+        for(int32 X = 0; X < GridSize.X; ++X){
+            // 세로 loop
+            for(int32 Y = 0; Y < GridSize.Y; ++Y){
+                FVector2D TileIndex(X,Y);
+                FVector SpawnRelativeLocation = FVector(TileIndex.X * (TileSize + TileSpace), TileIndex.Y * (TileSize + TileSpace), 0.0f);
+                FVector SpawnLocation = GridRelativeLocation + SpawnRelativeLocation;
 
-            // Spawn the tile actor
-            ABattleTile* BattleTileInstance = SpawnTileActor(TileIndex, TileSize, TileSpacing);
-
-            // Add the spawned tile actor to the map
-            if (BattleTileInstance)
-            {
-                SpawnedTiles.Add(TileIndex, BattleTileInstance);
+                ABattleTile* BattleTileInstance = GetWorld()->SpawnActor<ABattleTile>(BattleTileClass, SpawnLocation, FRotator::ZeroRotator);
+                if (BattleTileInstance){
+                    BattleTileInstance->SetTileCount(TileIndex);
+                    BattleGrid.Add(TileIndex, BattleTileInstance);
+                }                
             }
         }
     }
 }
 
-ABattleTile* ABattleGridManager::SpawnTileActor(FVector2D TileIndex, float TileSize, float TileSpacing)
-{
-    // Calculate spawn location
-    FVector SpawnLocation = FVector(TileIndex.X * (TileSize + TileSpacing), TileIndex.Y * (TileSize + TileSpacing), 0.0f);
-
-    // Spawn the tile actor
-    ABattleTile* BattleTileInstance = GetWorld()->SpawnActor<ABattleTile>(BattleTileClass, SpawnLocation, FRotator::ZeroRotator);
-    if (BattleTileInstance)
-    {
-        BattleTileInstance->SetTileCount(TileIndex);
+void ABattleGridManager::SetTileIndex(FVector2D Index, ABattleTile* TargetBattleTileComponent){
+    if (TargetBattleTileComponent)
+    {        
+            TargetBattleTileComponent->SetTileCount(Index);
     }
-
-    return BattleTileInstance;
 }

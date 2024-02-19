@@ -1,4 +1,4 @@
-// C
+// All rights to the code are with DoubleBox Studio. Founded in 2021, located in South Korea.
 
 #pragma once
 
@@ -15,29 +15,32 @@ class ISECONVI_API ABattleGridManager : public AActor
 public:	
     ABattleGridManager();
 
-    UFUNCTION(BlueprintCallable)
-    void SpawnTileActors(int32 Height, int32 Width, float TileSize, float TileSpacing);
+	UFUNCTION(BlueprintCallable, Category = "Battle Grid")
+	void SpawnBattleTileActor(FVector2D GridSize);
 
-    // Function to get the map of spawned tiles
-    UFUNCTION(BlueprintPure, Category = "Tile")
-    TMap<FVector2D, ABattleTile*> GetSpawnedTiles() const { return SpawnedTiles; };
+    UFUNCTION(BlueprintCallable, Category = "Battle Grid")
+    void SetTileIndex(FVector2D Index, ABattleTile* TargetBattleTileComponent);
 
-    // Container for storing spawned tile actors
-    UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Tile")
-    TMap<FVector2D, ABattleTile*> SpawnedTiles;
-	
-    // Tile actor class to spawn
-    UPROPERTY(EditDefaultsOnly, Category = "Tile")
+    UPROPERTY(EditAnywhere, Category = "Tile", meta = (AllowPrivateAccess = "true"))
     TSubclassOf<class ABattleTile> BattleTileClass;
+
+	UPROPERTY(EditAnywhere, Category = "Battle Grid")
+	float TileSize = 200.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Battle Grid")
+	float TileSpace = 10.0f;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Allocated Battle Tile List")
+    TMap<FVector2D, ABattleTile*> BattleGrid;
+
+
+
 protected:
 	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	virtual void BeginPlay() override;  
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-private:
-    // Function to spawn a single tile actor
-    ABattleTile* SpawnTileActor(FVector2D TileIndex, float TileSize, float TileSpacing);
 };
