@@ -46,5 +46,6 @@ void ABattleGridManager::SetTileIndex(FVector2D Index, ABattleTile* TargetBattle
     if (TargetBattleTileComponent)
     {        
             TargetBattleTileComponent->SetTileCount(Index);
+            
     }
 }
