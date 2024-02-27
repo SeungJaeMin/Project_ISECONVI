@@ -28,3 +28,7 @@ void ABattleTile::SetTileCount(FVector2D Count)
     // Set the tile count value
     TileIndex = Count;
 }
+
+FVector2D ABattleTile::GetTileLocation(){    
+    return TileIndex;    
+}

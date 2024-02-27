@@ -21,6 +21,12 @@ public:
 
     // Set the tile count value
     void SetTileCount(FVector2D Count);
+
+    UFUNCTION(BlueprintCallable, Category = "Tile Location")
+    FVector2D GetTileLocation();
+
+
+
 	
 protected:
 	// Called when the game starts or when spawned

@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// All rights to the code are with DoubleBox Studio. Founded in 2021, located in South Korea.
 
 
 #include "ISECONVI_BattleSequence/CombatComponent.h"
