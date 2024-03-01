@@ -16,9 +16,7 @@ AUnitBase::AUnitBase()
 // Called when the game starts or when spawned
 void AUnitBase::BeginPlay()
 {
-	Super::BeginPlay();
-
-	
+	Super::BeginPlay();	
 }
 
 // Called every frame

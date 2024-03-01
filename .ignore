@@ -1,7 +1,10 @@
 .git
+.vs
 .vscode
 Content
 DerivedDataCache
 Intermediate
 Platforms
 Saved
+Plugins/SpinePlugin/Content
+Plugins/SpinePlugin/Intermediate

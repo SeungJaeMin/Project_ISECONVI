@@ -59,6 +59,8 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Set Status")
 	void increaseHP(float Value);
+
+	
 	
 
 public:	
