@@ -24,13 +24,5 @@ public:
 	int PlayerProcessingDay;
 	UPROPERTY(EditAnywhere, Category = "Player Status")
 	float PlayerCurrentMoney;
-
-	
-
-
-	
-
-
-
-	
+		
 };
