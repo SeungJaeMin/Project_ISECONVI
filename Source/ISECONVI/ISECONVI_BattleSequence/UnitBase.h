@@ -44,7 +44,7 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Get Status")
     float getCurrentHP();
-y
+
 	UFUNCTION(BlueprintCallable, Category = "Get Status")
 	float getCurrentMP();
 
