@@ -36,6 +36,7 @@ void ABattleGridManager::SpawnBattleTileActor(FVector2D GridSize){
                 if (BattleTileInstance){
                     // 인스턴스 스폰시 호출하는 곳
                     BattleTileInstance->SetTileCount(TileIndex);
+                    
                     BattleGrid.Add(TileIndex, BattleTileInstance);
                 }                
             }
@@ -46,8 +47,7 @@ void ABattleGridManager::SpawnBattleTileActor(FVector2D GridSize){
 void ABattleGridManager::SetTileIndex(FVector2D Index, ABattleTile* TargetBattleTileComponent){
     if (TargetBattleTileComponent)
     {        
-            TargetBattleTileComponent->SetTileCount(Index);
-            
+            TargetBattleTileComponent->SetTileCount(Index);            
     }
 }
 

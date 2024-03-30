@@ -3,12 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "GameFramework/Actor.h"
 #include "InputActionValue.h"
 #include "UnitBase.generated.h"
 
 UCLASS()
-class ISECONVI_API AUnitBase : public ACharacter
+class ISECONVI_API AUnitBase : public AActor
 {
 	GENERATED_BODY()
 	
@@ -38,6 +38,10 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Set Status")
 	void setCurrentLocation(FVector2D Value);
+
+	UFUNCTION(BlueprintCallable, Category = "Get Status")
+	FVector2D getCurrentLocation();
+
 	
 	UFUNCTION(BlueprintCallable, Category = "Get Status")
 	FString getUnitName();

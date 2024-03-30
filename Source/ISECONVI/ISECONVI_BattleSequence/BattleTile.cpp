@@ -7,7 +7,7 @@
 ABattleTile::ABattleTile()
 {
     // Set this actor to call Tick() every frame
-    PrimaryActorTick.bCanEverTick = false;
+    PrimaryActorTick.bCanEverTick = false;    
     TileIndex = FVector2D::ZeroVector;
 }
 
