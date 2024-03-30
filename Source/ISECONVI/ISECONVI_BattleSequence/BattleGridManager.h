@@ -31,7 +31,7 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Battle Grid")
 	float TileSpace = 10.0f;
 
-	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Allocated Battle Tile List")
+	UPROPERTY(EditAnywhere, Category = "Allocated Battle Tile List")
     TMap<FVector2D, ABattleTile*> BattleGrid;
 
 	// TODO: 
