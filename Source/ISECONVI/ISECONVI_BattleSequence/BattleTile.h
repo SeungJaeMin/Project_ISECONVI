@@ -19,8 +19,11 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Tile")
     FVector2D TileIndex;
 
-    // Set the tile count value
-    void SetTileCount(FVector2D Count);
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Tile")
+    FVector TileSize;
+
+    // Set the tile value
+    void SetTileCount(FVector2D Count);       
 
     UFUNCTION(BlueprintCallable, Category = "Tile Location")
     FVector2D GetTileLocation();

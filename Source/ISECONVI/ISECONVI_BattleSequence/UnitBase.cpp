@@ -29,6 +29,10 @@ void AUnitBase::setCurrentLocation(FVector2D value){
 	CurrentLocation2D = value;
 }
 
+FVector2D AUnitBase::getCurrentLocation(){
+	return CurrentLocation2D;
+}
+
 float AUnitBase::getCurrentHP(){
 	return CurrentHP;
 }
