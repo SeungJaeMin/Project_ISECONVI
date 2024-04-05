@@ -28,6 +28,10 @@
 		{
 			"Name": "AbilitySystemGameFeatureActions",
 			"Enabled": true
+		},
+		{
+			"Name": "LiveLink",
+			"Enabled": true
 		}
 	]
 }

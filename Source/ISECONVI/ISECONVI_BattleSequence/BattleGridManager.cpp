@@ -25,8 +25,8 @@ void ABattleGridManager::SpawnBattleTileActor(FVector2D GridSize){
         // 상대트랜스폼을 위한 셀프 로케이션 로컬변수
         FVector GridRelativeLocation = GetActorLocation();
         // 가로 loop
-        for(int32 X = 3; X < GridSize.X; ++X){
-			// 세로 loop
+        for(int32 X = 0; X < GridSize.X; ++X){
+            // 세로 loop
             for(int32 Y = 0; Y < GridSize.Y; ++Y){
                 FVector2D TileIndex(X,Y);
                 FVector SpawnRelativeLocation = FVector(TileIndex.X * (TileSize + TileSpace), TileIndex.Y * (TileSize + TileSpace), 0.0f);
@@ -47,8 +47,8 @@ void ABattleGridManager::SetTileIndex(FVector2D Index, ABattleTile* TargetBattle
     if (TargetBattleTileComponent)
     {        
             TargetBattleTileComponent->SetTileCount(Index);
-
-	}
+            
+    }
 }
 
 
