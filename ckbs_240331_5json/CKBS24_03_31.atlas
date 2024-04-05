@@ -1,0 +1,187 @@
+CKBS24_03_31.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+atk1/atk Rhand2
+bounds:1666,2,262,363
+rotate:90
+atk2/atk2 spine
+bounds:1666,266,658,362
+rotate:90
+sk1/mob1 sk1Rarm2
+bounds:1666,926,335,1090
+sk2/mob1 sk2 body
+bounds:2,18,1662,1998
+
+CKBS24_03_31_2.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+atk1/atk body
+bounds:2,2,1666,1990
+atk2/atk2 Larm
+bounds:1670,937,586,332
+rotate:90
+sk1/mob1 sk1hat
+bounds:1670,4,456,369
+rotate:90
+sk2/mob1 sk2 LSD
+bounds:1670,1525,376,467
+standing/lefthand
+bounds:1670,462,367,473
+
+CKBS24_03_31_3.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+atk1/atk LS
+bounds:1652,2,387,481
+sk1/mob1 sk1LSH
+bounds:1652,991,383,516
+sk1/mob1 sk1Larm
+bounds:1652,1509,382,524
+sk1/mob1 sk1body
+bounds:2,63,1648,1970
+sk2/mob1 sk2 Lpal2
+bounds:1652,485,379,504
+
+CKBS24_03_31_4.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+atk1/atk Larm
+bounds:1642,321,396,398
+rotate:90
+atk1/atk Rsam2
+bounds:1568,2,317,472
+rotate:90
+atk2/atk2 coat1
+bounds:1642,1205,401,787
+atk2/atk2 coat3
+bounds:2,17,488,883
+rotate:90
+atk2/atk2 leg
+bounds:2,507,1638,1485
+sk1/mob1 sk1Lhand
+bounds:1642,719,402,484
+sk2/mob1 sk2 Rarm
+bounds:887,40,679,465
+
+CKBS24_03_31_5.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+atk1/atk coatB
+bounds:1718,2,187,314
+rotate:90
+atk2/atk2 Rarm
+bounds:1536,987,485,379
+atk2/atk2 coat2
+bounds:1241,28,161,475
+rotate:90
+atk2/atk2 topbody
+bounds:2,36,1237,886
+sk1/mob1 sk1body2
+bounds:1241,191,596,731
+sk1/mob1 sk1coatB
+bounds:1839,246,131,365
+sk2/mob1 sk2 magazine
+bounds:1536,1368,444,674
+standing/coat back
+bounds:1839,613,175,372
+standing/leg
+bounds:2,924,1532,1118
+
+CKBS24_03_31_6.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+atk2/atk2 back
+bounds:1291,910,1112,681
+rotate:90
+sk1/mob1 sk1coat
+bounds:2,80,1028,973
+sk2/mob1 sk2 coat
+bounds:2,1055,1287,967
+standing/coat
+bounds:1032,2,967,906
+
+CKBS24_03_31_7.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+atk1/atk Lhand2
+bounds:1475,380,318,396
+rotate:90
+atk1/atk RS
+bounds:2,82,474,556
+atk1/atk coat
+bounds:2,1083,1037,963
+atk1/atk face
+bounds:1871,1308,188,169
+rotate:90
+atk1/atk hat
+bounds:1041,1083,417,343
+sk1/mob1 sk1RSH
+bounds:478,99,410,534
+sk1/mob1 sk1Rsam2
+bounds:1486,18,360,392
+rotate:90
+sk2/mob1 sk2 Larm
+bounds:2,640,595,441
+sk2/mob1 sk2 RSD
+bounds:1458,1498,432,548
+sk2/mob1 sk2 Rhand2
+bounds:1460,1098,409,398
+sk2/mob1 sk2 coatB
+bounds:1892,1693,123,353
+sk2/mob1 sk2 effect1
+bounds:599,635,464,446
+sk2/mob1 sk2 effect2
+bounds:1065,550,531,408
+rotate:90
+sk2/mob1 sk2 gunbarrel
+bounds:1475,700,396,389
+rotate:90
+sk2/mob1 sk2 handle
+bounds:1312,2,259,172
+rotate:90
+standing/Rarm
+bounds:890,263,285,489
+rotate:90
+standing/Rshoulder
+bounds:1041,1428,415,618
+standing/face
+bounds:1871,1118,188,165
+rotate:90
+standing/spine
+bounds:890,44,420,217
+
+CKBS24_03_31_8.png
+size:2048,1024
+filter:Linear,Linear
+pma:true
+atk1/atk Lsam2
+bounds:1209,778,244,410
+rotate:90
+atk1/atk Rarm
+bounds:2,320,393,349
+atk1/atk shy
+bounds:1621,760,262,332
+rotate:90
+atk2/atk2 hat
+bounds:2,671,405,351
+sk1/mob1 sk1Lsam2
+bounds:409,675,391,347
+sk1/mob1 sk1face
+bounds:1825,531,227,221
+rotate:90
+sk2/mob1 sk2 Rpal2
+bounds:1209,527,249,332
+rotate:90
+sk2/mob1 sk2 hat
+bounds:802,701,405,321
+standing/Rhand
+bounds:1543,488,280,270
+standing/hat
+bounds:2,2,382,316
