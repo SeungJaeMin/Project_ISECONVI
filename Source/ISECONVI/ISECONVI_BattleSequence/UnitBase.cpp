@@ -8,6 +8,7 @@ AUnitBase::AUnitBase()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
 	CurrentHP = MaxHP;
 	CurrentMP = MaxMP;
 }
@@ -27,10 +28,6 @@ void AUnitBase::Tick(float DeltaTime)
 
 void AUnitBase::setCurrentLocation(FVector2D value){
 	CurrentLocation2D = value;
-}
-
-FVector2D AUnitBase::getCurrentLocation(){
-	return CurrentLocation2D;
 }
 
 float AUnitBase::getCurrentHP(){
