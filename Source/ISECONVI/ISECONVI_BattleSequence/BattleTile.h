@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// All rights to the code are with DoubleBox Studio. Founded in 2021, located in South Korea.
 
 #pragma once
 
@@ -19,8 +19,11 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Tile")
     FVector2D TileIndex;
 
-    // Set the tile count value
-    void SetTileCount(FVector2D Count);
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Tile")
+    FVector TileSize;
+
+    // Set the tile value
+    void SetTileCount(FVector2D Count);       
 
     UFUNCTION(BlueprintCallable, Category = "Tile Location")
     FVector2D GetTileLocation();
