@@ -31,6 +31,8 @@ protected:
 	float MaxMP;
 	UPROPERTY(EditAnywhere, Category = "Status")
 	float CurrentMP;
+	UPROPERTY(EditAnywhere, Category = "Status")
+	float AGI;
 
 	// 위치 정보 스테이터스
 	UPROPERTY(EditAnywhere, Category = "Status")
